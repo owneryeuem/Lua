@@ -1,5 +1,5 @@
-                local HttpService = game:GetService("HttpService") local Players = game:GetService("Players") local UniverseID = 0 pcall(function()
-            local data = HttpService:JSONDecode(game:HttpGet("https://apis.roblox.com/universes/v1/places/"..game.PlaceId.."/universe")) UniverseID = data.universeId 
-        end)
-    local PlaceIds = {2753915549, 7449423635, 4442272183, 122478697296975}  if not (table.find(PlaceIds, game.PlaceId) or UniverseID == 994732206) then game.Players.LocalPlayer:Kick("No Support Game") return end print("loading script...") repeat task.wait() until Players.LocalPlayer and Players.LocalPlayer:FindFirstChild("PlayerGui") loadstring(game:HttpGet(
-"https://raw.githubusercontent.com/owneryeuem/Lua/refs/heads/main/mainFRUIT"))()
+                    local HttpService = game:GetService("HttpService") local Players = game:GetService("Players") local UniverseID = 0 pcall(function()
+                local data = HttpService:JSONDecode(game:HttpGet("https://apis.roblox.com/universes/v1/places/"..game.PlaceId.."/universe")) UniverseID = data.universeId 
+            end)
+        local PlaceIds = {2753915549, 7449423635, 4442272183, 122478697296975}  if not (table.find(PlaceIds, game.PlaceId) or UniverseID == 994732206) then game.Players.LocalPlayer:Kick("No Support Game") return end print("loading script...") repeat task.wait() until Players.LocalPlayer and Players.LocalPlayer:FindFirstChild("PlayerGui") loadstring(game:HttpGet("https://raw.githubusercontent.com/owneryeuem/Lua/refs/heads/main/API.lua"))()task.wait(1)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/owneryeuem/Lua/refs/heads/main/mainFRUIT"))()
