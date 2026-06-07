@@ -5,7 +5,7 @@ pcall(function()
 end)
 local PlaceIds = {2753915549, 7449423635, 4442272183, 122478697296975}
 if not (table.find(PlaceIds, game.PlaceId) or UniverseID == 994732206) then
-    game.Players.LocalPlayer:Kick("Kich no support game")("Kich no support game")
+    game.Players.LocalPlayer:Kick("Kich no support game")
     return
 end
 print("loading script...")
